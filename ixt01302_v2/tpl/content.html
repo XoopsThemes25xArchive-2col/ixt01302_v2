@@ -1,0 +1,56 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: content.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div class="ixt-contentLayout">
+ <div class="ixt-content">
+  <!-- top content blocks -->
+  <{if $ixt_page_topleft or $ixt_page_topcenter or $ixt_page_topright}>
+   <div class="ixt-<{$theme_top_order}>contentblocks" id="ixt-content-topblocks"> 
+    <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
+    <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
+    <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}> 
+   </div>
+  <{/if}>
+  <!-- module content -->
+  <{if $ixt_contents}>
+   <div class="ixt-Post">
+    <div class="ixt-Post-body">
+     <div class="ixt-Post-inner">
+      <div class="ixt-PostContent"><{$ixt_contents}></div>
+     </div>
+    </div>
+   </div>
+  <{/if}>
+  <!-- bottom content blocks -->
+  <{if $ixt_page_bottomleft or $ixt_page_bottomcenter or $ixt_page_bottomright}>
+   <div class="ixt-<{$theme_bottom_order}>contentblocks" id="ixt-content-bottomblocks"> 
+    <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
+    <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
+    <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}> 
+   </div>
+  <{/if}> 
+ </div>
+ <div class="ixt-sidebar1">
+  <!-- left column -->
+  <{if $ixt_rtl}>
+   <{if $ixt_canvas_right}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_right zoneId='ixt-canvas-rightcolumn'}><{/if}>
+  <{else }>
+   <{if $ixt_canvas_left}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_left zoneId='ixt-canvas-leftcolumn'}><{/if}>
+  <{/if}>
+  <!-- right column -->
+  <{if $ixt_rtl}>
+   <{if $ixt_canvas_left}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_left zoneId='ixt-canvas-leftcolumn'}><{/if}>
+  <{else }>
+   <{if $ixt_canvas_right}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_right zoneId='ixt-canvas-rightcolumn'}><{/if}>
+  <{/if}> 
+ </div>
+</div>

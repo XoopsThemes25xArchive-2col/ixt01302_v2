@@ -1,0 +1,206 @@
+/*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: style.ie7.css 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+/* begin Box, Sheet */
+.ixt-Sheet-tl { clip: rect(auto 35px 35px auto); }
+.ixt-Sheet-tr { clip: rect(auto auto 35px 35px); }
+.ixt-Sheet-bl { clip: rect(35px 35px auto auto); }
+.ixt-Sheet-br { clip: rect(35px auto auto 35px); }
+.ixt-Sheet-tc { clip: rect(auto auto 35px auto); }
+.ixt-Sheet-bc { clip: rect(35px auto auto auto); }
+.ixt-Sheet-cr { clip: rect(auto auto auto 35px); }
+.ixt-Sheet-cl { clip: rect(auto 35px auto auto); }
+.ixt-Sheet-body { zoom: 1; }
+/* end Box, Sheet */
+
+/* begin Menu */
+.ixt-nav .r { clip: rect(auto auto auto 976px); }
+/* end Menu */
+
+/* begin MenuItem */
+.ixt-menu a .r { clip: rect(auto auto auto 400px); }
+/* end MenuItem */
+
+/* begin Box, Block */
+.ixt-Block-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block-br { clip: rect(19px auto auto 19px); }
+.ixt-Block-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block-bc { clip: rect(19px auto auto auto); }
+.ixt-Block-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block-body { zoom: 1; }
+.ixt-Block1-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block1-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block1-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block1-br { clip: rect(19px auto auto 19px); }
+.ixt-Block1-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block1-bc { clip: rect(19px auto auto auto); }
+.ixt-Block1-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block1-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block1-body { zoom: 1; }
+.ixt-Block2-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block2-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block2-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block2-br { clip: rect(19px auto auto 19px); }
+.ixt-Block2-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block2-bc { clip: rect(19px auto auto auto); }
+.ixt-Block2-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block2-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block2-body { zoom: 1; }
+.ixt-Block3-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block3-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block3-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block3-br { clip: rect(19px auto auto 19px); }
+.ixt-Block3-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block3-bc { clip: rect(19px auto auto auto); }
+.ixt-Block3-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block3-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block3-body { zoom: 1; }
+.ixt-Block4-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block4-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block4-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block4-br { clip: rect(19px auto auto 19px); }
+.ixt-Block4-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block4-bc { clip: rect(19px auto auto auto); }
+.ixt-Block4-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block4-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block4-body { zoom: 1; }
+.ixt-Block5-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block5-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block5-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block5-br { clip: rect(19px auto auto 19px); }
+.ixt-Block5-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block5-bc { clip: rect(19px auto auto auto); }
+.ixt-Block5-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block5-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block5-body { zoom: 1; }
+.ixt-Block6-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block6-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block6-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block6-br { clip: rect(19px auto auto 19px); }
+.ixt-Block6-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block6-bc { clip: rect(19px auto auto auto); }
+.ixt-Block6-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block6-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block6-body { zoom: 1; }
+.ixt-Block7-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block7-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block7-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block7-br { clip: rect(19px auto auto 19px); }
+.ixt-Block7-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block7-bc { clip: rect(19px auto auto auto); }
+.ixt-Block7-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block7-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block7-body { zoom: 1; }
+.ixt-Block8-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block8-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block8-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block8-br { clip: rect(19px auto auto 19px); }
+.ixt-Block8-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block8-bc { clip: rect(19px auto auto auto); }
+.ixt-Block8-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block8-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block8-body { zoom: 1; }
+.ixt-Block9-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block9-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block9-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block9-br { clip: rect(19px auto auto 19px); }
+.ixt-Block9-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block9-bc { clip: rect(19px auto auto auto); }
+.ixt-Block9-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block9-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block9-body { zoom: 1; }
+.ixt-Block10-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block10-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block10-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block10-br { clip: rect(19px auto auto 19px); }
+.ixt-Block10-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block10-bc { clip: rect(19px auto auto auto); }
+.ixt-Block10-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block10-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block10-body { zoom: 1; }
+.ixt-Block11-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block11-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block11-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block11-br { clip: rect(19px auto auto 19px); }
+.ixt-Block11-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block11-bc { clip: rect(19px auto auto auto); }
+.ixt-Block11-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block11-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block11-body { zoom: 1; }
+.ixt-Block12-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block12-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block12-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block12-br { clip: rect(19px auto auto 19px); }
+.ixt-Block12-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block12-bc { clip: rect(19px auto auto auto); }
+.ixt-Block12-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block12-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block12-body { zoom: 1; }
+.ixt-Block999-tl { clip: rect(auto 19px 19px auto); }
+.ixt-Block999-tr { clip: rect(auto auto 19px 19px); }
+.ixt-Block999-bl { clip: rect(19px 19px auto auto); }
+.ixt-Block999-br { clip: rect(19px auto auto 19px); }
+.ixt-Block999-tc { clip: rect(auto auto 19px auto); }
+.ixt-Block999-bc { clip: rect(19px auto auto auto); }
+.ixt-Block999-cr { clip: rect(auto auto auto 19px); }
+.ixt-Block999-cl { clip: rect(auto 19px auto auto); }
+.ixt-Block999-body { zoom: 1; }
+/* end Box, Block */
+
+/* begin BlockHeader */
+.ixt-BlockHeader .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader1 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader2 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader3 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader4 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader5 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader6 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader7 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader8 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader9 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader10 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader11 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader12 .r { clip: rect(auto auto auto 974px); }
+.ixt-BlockHeader999 .r { clip: rect(auto auto auto 974px); }
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.ixt-BlockContent-body { zoom: 1; }
+.ixt-BlockContent1-body { zoom: 1; }
+.ixt-BlockContent2-body { zoom: 1; }
+.ixt-BlockContent3-body { zoom: 1; }
+.ixt-BlockContent4-body { zoom: 1; }
+.ixt-BlockContent5-body { zoom: 1; }
+.ixt-BlockContent6-body { zoom: 1; }
+.ixt-BlockContent7-body { zoom: 1; }
+.ixt-BlockContent8-body { zoom: 1; }
+.ixt-BlockContent9-body { zoom: 1; }
+.ixt-BlockContent10-body { zoom: 1; }
+.ixt-BlockContent11-body { zoom: 1; }
+.ixt-BlockContent12-body { zoom: 1; }
+.ixt-BlockContent999-body { zoom: 1; }
+/* end Box, BlockContent */
+
+/* begin Box, Post */
+.ixt-Post-body { zoom: 1; }
+/* end Box, Post */
+
+/* begin PostContent */
+.ixt-PostContent { height:1%; }
+/* end PostContent */
+
+/* begin Button */
+.ixt-button-wrapper .r { clip: rect(auto auto auto 401px); }
+/* end Button */

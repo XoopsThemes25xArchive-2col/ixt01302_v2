@@ -1,0 +1,113 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: centerblocks.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if $lcr=='l'}><{assign var=lcr value='left'}><{elseif $lcr=='r'}><{assign var=lcr value='right'}><{else }><{assign var=lcr value='center'}><{/if}>
+<{if $topbottom=="top"}>
+ <{if $ixt_page_topcenter && $lcr=="center"}>
+  <div id="ixt-content-topcenterblocks">
+   <{foreach from=$ixt_page_topcenter item=block}>
+    <div class="ixt-Post">
+     <div class="ixt-Post-body">
+      <div class="ixt-Post-inner">
+       <{if $block.title}>
+        <div class="ixt-PostMetadata"><h2 class="ixt-PostHeaderIcon-wrapper"><span class="ixt-PostHeader"><{$block.title}></span></h2></div>
+       <{/if}>
+       <div class="ixt-PostContent"><{$block.content}></div>
+      </div>
+     </div>
+    </div>
+   <{/foreach}>
+  </div>
+ <{/if}>
+ <{if $ixt_page_topleft && $lcr=="left"}>
+  <div id="ixt-content-topleftblocks">
+   <{foreach from=$ixt_page_topleft item=block}>
+    <div class="ixt-Post">
+     <div class="ixt-Post-body">
+      <div class="ixt-Post-inner">
+       <{if $block.title}>
+        <div class="ixt-PostMetadata"><h2 class="ixt-PostHeaderIcon-wrapper"><span class="ixt-PostHeader"><{$block.title}></span></h2></div>
+       <{/if}>
+       <div class="ixt-PostContent"><{$block.content}></div>
+      </div>
+     </div>
+    </div>
+   <{/foreach}>
+  </div>
+ <{/if}>
+ <{if $ixt_page_topright && $lcr=="right"}>
+  <div id="ixt-content-toprightblocks">
+   <{foreach from=$ixt_page_topright item=block}>
+    <div class="ixt-Post">
+     <div class="ixt-Post-body">
+      <div class="ixt-Post-inner">
+       <{if $block.title}>
+        <div class="ixt-PostMetadata"><h2 class="ixt-PostHeaderIcon-wrapper"><span class="ixt-PostHeader"><{$block.title}></span></h2></div>
+       <{/if}>
+       <div class="ixt-PostContent"><{$block.content}></div>
+      </div>
+     </div>
+    </div>
+   <{/foreach}>
+  </div>
+ <{/if}>
+<{/if}>
+<{if $topbottom=="bottom"}>
+ <{if $ixt_page_bottomcenter && $lcr=="center"}>
+  <div id="ixt-content-bottomcenterblocks">
+   <{foreach from=$ixt_page_bottomcenter item=block}>
+    <div class="ixt-Post">
+     <div class="ixt-Post-body">
+      <div class="ixt-Post-inner">
+       <{if $block.title}>
+        <div class="ixt-PostMetadata"><h2 class="ixt-PostHeaderIcon-wrapper"><span class="ixt-PostHeader"><{$block.title}></span></h2></div>
+       <{/if}>
+       <div class="ixt-PostContent"><{$block.content}></div>
+      </div>
+     </div>
+    </div>
+   <{/foreach}>
+  </div>
+ <{/if}>
+ <{if $ixt_page_bottomleft && $lcr=="left"}>
+  <div id="ixt-content-bottomleftblocks">
+   <{foreach from=$ixt_page_bottomleft item=block}>
+    <div class="ixt-Post">
+     <div class="ixt-Post-body">
+      <div class="ixt-Post-inner">
+       <{if $block.title}>
+        <div class="ixt-PostMetadata"><h2 class="ixt-PostHeaderIcon-wrapper"><span class="ixt-PostHeader"><{$block.title}></span></h2></div>
+       <{/if}>
+       <div class="ixt-PostContent"><{$block.content}></div>
+      </div>
+     </div>
+    </div>
+   <{/foreach}>
+  </div>
+ <{/if}>
+ <{if $ixt_page_bottomright && $lcr=="right"}>
+  <div id="ixt-content-bottomrightblocks">
+   <{foreach from=$ixt_page_bottomright item=block}>
+    <div class="ixt-Post">
+     <div class="ixt-Post-body">
+      <div class="ixt-Post-inner">
+       <{if $block.title}>
+        <div class="ixt-PostMetadata"><h2 class="ixt-PostHeaderIcon-wrapper"><span class="ixt-PostHeader"><{$block.title}></span></h2></div>
+       <{/if}>
+       <div class="ixt-PostContent"><{$block.content}></div>
+      </div>
+     </div>
+    </div>
+   <{/foreach}>
+  </div>
+ <{/if}>
+<{/if}>

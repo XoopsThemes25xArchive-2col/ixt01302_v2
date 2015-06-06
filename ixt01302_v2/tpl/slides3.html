@@ -1,0 +1,72 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @version		     $Id: slides3.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if $xoops_dirname == "system"}>
+<!-- slides on homepage and system pages only -->
+<!-- width adjust 960px, 970px, 980px-->
+<style type="text/css" media="screen">
+ #ixt-slider3 { width: 970px; height: 300px; position: relative; overflow: hidden;}
+ #ixt-slider3Content { width: 970px; position: absolute;	top: 0;	margin-left: 0;}
+ .ixt-slider3Image { float: left; position: relative;	display: none;}
+ .ixt-slider3Image span { text-align:left; position: absolute;	padding: 10px 13px; width: 270px; background-color: #000; filter: alpha(opacity=70); -moz-opacity: 0.7;	-khtml-opacity: 0.7; opacity: 0.7; color: #fff; display: none;}
+ .clear {	clear: both;}
+ .left {	top: 0; left: 0;	width: 270px !important;	height: 280px;}
+ .right {	right: 0;	bottom: 0;	width: 270px !important;	height: 283px;}
+ #ixt-slider3Content ul { list-style-type: none;}
+</style>
+<!-- JavaScripts-->
+<script type="text/javascript" src="<{xoImgUrl js/s3Slider.js}>"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#ixt-slider3').s3Slider({
+            timeOut: 5000 
+        });
+    });
+</script>
+
+<div align="center">
+ <div id="ixt-slider3">
+  <ul id="ixt-slider3Content">
+   <li class="ixt-slider3Image">
+    <a href="#"><img src="<{xoImgUrl img/slides3/1.jpg}>" alt="slide 1" /></a>
+    <span class="right">
+     <h2>What is XOOPS?</h2>
+     <p>&nbsp;</p>
+     <p>XOOPS is an extensible, OO (Object Oriented), easy to use dynamic web content management system written in PHP. XOOPS is the ideal tool for developing small to large dynamic community websites, intra company portals, corporate portals, weblogs and much more.</p>
+     <p>&nbsp;</p>
+     <p>Read the <a href="http://xoops.org">All about XOOPS</a> page for more details.</p>
+    </span>
+   </li>
+   <li class="ixt-slider3Image">
+    <a href="#"><img src="<{xoImgUrl img/slides3/2.jpg}>" alt="slide 2" /></a>
+    <span class="right">
+     <h2>What is IXThemes?</h2>
+     <p>&nbsp;</p>
+     <p>IXThemes is an implementation of innovative methods in the development of qualitative universality themes and templates for content management systems based on the XOOPS Web application platform.</p>
+     <p>&nbsp;</p>
+     <p>Read the <a href="http://ixthemes.org">All about IXThemes</a> page for more details.</p>
+    </span>
+   </li>
+   <li class="ixt-slider3Image">
+    <a href="#"><img src="<{xoImgUrl img/slides3/3.jpg}>" alt="slide 3" /></a>
+    <span class="right">
+     <h2>What is XOOPS?</h2>
+     <p>XOOPS is an extensible, OO (Object Oriented), easy to use dynamic web content management system written in PHP. XOOPS is the ideal tool for developing small to large dynamic community websites, corporate portals and much more.</p>
+     <p>&nbsp;</p>
+     <h2>What is IXThemes?</h2>
+     <p>IXThemes is an implementation of innovative methods in the development of qualitative universality themes and templates for content management systems based on the XOOPS Web application platform.</p>
+    </span>
+   </li>
+   <div class="clear ixt-slider3Image"></div>
+  </ul>
+ </div>
+</div>
+<{/if}>

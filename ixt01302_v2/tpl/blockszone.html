@@ -1,0 +1,55 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: blockszone.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{*
+* system blocks id & templates:
+*  1 - system_block_user.html
+*  2 - system_block_login.html
+*  3 - system_block_search.html
+*  4 - system_block_waiting.html
+*  5 - system_block_mainmenu.html
+*  6 - system_block_siteinfo.html
+*  7 - system_block_online.html
+*  8 - system_block_topusers.html
+*  9 - system_block_newusers.html
+* 10 - system_block_comments.html
+* 11 - system_block_notification.html
+* 12 - system_block_themes.html
+*}>
+<{if $blocks}>
+ <{foreach from=$blocks item=block}>
+  <{if ($block.id == "1")||($block.id == "2")||($block.id == "3")||($block.id == "4")||($block.id == "5")||($block.id == "6")||($block.id == "7")||($block.id == "8")||($block.id == "9")||($block.id == "10")||($block.id == "11")||($block.id == "12")}>
+   <{assign var=ixtbid value=$block.id}>
+  <{else }>
+   <{assign var=ixtbid value=""}>
+  <{/if}>
+  <div class="ixt-Block<{$ixtbid}>">
+   <div class="ixt-Block<{$ixtbid}>-tl"></div><div class="ixt-Block<{$ixtbid}>-tr"></div><div class="ixt-Block<{$ixtbid}>-bl"></div><div class="ixt-Block<{$ixtbid}>-br"></div><div class="ixt-Block<{$ixtbid}>-tc"></div><div class="ixt-Block<{$ixtbid}>-bc"></div><div class="ixt-Block<{$ixtbid}>-cl"></div><div class="ixt-Block<{$ixtbid}>-cr"></div>
+   <div class="ixt-Block<{$ixtbid}>-cc"></div>
+   <div class="ixt-Block<{$ixtbid}>-body">
+    <{if $block.title}>
+     <div class="ixt-BlockHeader<{$ixtbid}>"><div class="l"></div><div class="r"></div><div class="ixt-header-tag-icon"><div class="t"><{$block.title}></div></div></div>
+    <{/if}>
+    <div class="ixt-BlockContent<{$ixtbid}>">
+     <div class="ixt-BlockContent<{$ixtbid}>-tl"></div><div class="ixt-BlockContent<{$ixtbid}>-tr"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-bl"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-br"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-tc"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-bc"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-cl"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-cr"><div></div></div><div class="ixt-BlockContent<{$ixtbid}>-cc"></div>
+     <div class="ixt-BlockContent<{$ixtbid}>-body">
+      <{$block.content}>
+      <{if ($xoops_userid == "1")}>
+       <br />
+       <{$block.id}>
+      <{/if}>
+     </div>
+    </div>
+   </div>
+  </div>
+ <{/foreach}>
+<{/if}>

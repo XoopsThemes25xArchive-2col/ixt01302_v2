@@ -1,0 +1,41 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: globalnav.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if $cms == "xoops"}>
+ <{php }>include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php'; $modules = b_system_main_show(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{elseif $cms == "exm"}>
+ <{php }>include_once XOOPS_ROOT_PATH.'/modules/system/blocks/block_mainmenu.php'; $modules = system_bk_mainmenu(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{elseif $cms == "icms"}>
+ <{php }>include_once ICMS_ROOT_PATH.'/modules/system/blocks/system_blocks.php'; $modules = b_system_main_show(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{else }>
+ <{assign var=ixt_lang_home value="Home"}>
+<{/if}>
+
+<div class="ixt-nav">
+ <div class="l"></div><div class="r"></div>
+ <ul class="ixt-menu">
+  <li><a href="<{$ixt_url}>/index.php" <{if $xoops_dirname == "system"}> class="active"<{/if}> title="<{$ixt_lang_home}>"><span class="l"></span><span class="r"></span><span class="t"><{$ixt_lang_home}></span></a></li>
+  <{foreach item=module from=$block.modules}>
+   <li><a href="<{$ixt_url}>/modules/<{$module.directory}>/" <{if $xoops_dirname == $module.directory}> class="active"<{/if}> title="<{$module.name}>"><span class="l"></span><span class="r"></span><span class="t"><{$module.name}></span></a>
+    <ul>
+    <{foreach item=sublink from=$module.sublinks}>
+      <li><a href="<{$sublink.url}>" title="<{$sublink.name}>"><{$sublink.name}></a></li>
+    <{/foreach}>
+    </ul>
+    </li>
+  <{/foreach}>
+  <li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Other</span></a></li>
+ </ul>
+</div>

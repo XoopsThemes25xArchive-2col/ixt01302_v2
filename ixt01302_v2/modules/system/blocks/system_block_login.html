@@ -1,0 +1,76 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: system_block_login.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div id="xoops_block_login_form">
+ <form style="width:100%; overflow:hidden; text-align:center;" action="<{$xoops_url}>/user.php" method="post">
+   <label for="edit-name"><{$block.lang_username}><span title="This field is required." class="form-required">*</span></label>
+   <div align="center">
+    <input type="text" size="33" name="uname" value="<{$block.unamevalue}>" maxlength="33" />
+    <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+    <input type="hidden" name="op" value="login" />
+   </div>
+   <p></p>
+   <label for="edit-pass"><{$block.lang_password}><span title="This field is required." class="form-required">*</span></label>
+   <div align="center">
+    <input type="password" name="pass" size="33" maxlength="33" />
+   </div>
+   <p>&nbsp;</p>
+   <div align="center">
+    <span class="ixt-button-wrapper">
+     <span class="l"></span><span class="r"></span>
+     <input type="submit" class="ixt-button" value="<{$block.lang_login}>" name="login" />
+    </span>
+   </div>
+  <{if $block.rememberme }>
+   <div align="right" style="_height:100%;overflow:hidden;padding-top:10px;">
+    <div align="left" style="float:left;overflow:hidden;">
+     <{$block.lang_rememberme}>
+    </div>
+    <input type="checkbox" name="rememberme" value="On" />
+   </div>
+  <{/if}> 
+  <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+  <input type="hidden" name="op" value="login" />
+  <p><{$block.sslloginlink}></p>
+ </form>
+ 
+ <{if $block.auth_openid}>
+  <div style="text-align:<{$smarty.const._GLOBAL_LEFT}>;padding-top:10px;">
+   <p><a href="#" onclick="xoopsGetElementById('openid-verify-form2').style.display = 'block'; xoopsGetElementById('xoops_block_login_form').style.display = 'none'; return false;"><{$smarty.const._MB_SYSTEM_OPENID_LOGIN}></a></p>
+  </div>
+ <{/if}> 
+</div>
+<{if $block.auth_openid}>
+ <div id="openid-verify-form2" style="display:none;">
+  <form style="width:96%;" method="get" action="<{$xoops_url}>/try_auth.php">
+   <p><{$smarty.const._MB_SYSTEM_OPENID_URL}></p>
+   <div align="right" style="_height:100%;overflow:hidden;">
+    <div align="left" style="float:left;overflow:hidden;">
+     <input type="text" class="openid_url" name="openid_identifier" size="10" value="" maxlength="100" />
+    </div>
+    <input type="hidden" name="action" value="verify" />
+    <input type="submit" value="<{$block.lang_login}>" />
+   </div>
+  </form>
+  <div style="text-align:<{$smarty.const._GLOBAL_LEFT}>;padding-top:10px;">
+   <p><a href="#" onclick="xoopsGetElementById('xoops_block_login_form').style.display = 'block'; xoopsGetElementById('openid-verify-form2').style.display = 'none'; return false;"><{$smarty.const._MB_SYSTEM_OPENID_NORMAL_LOGIN}></a></p>
+  </div>
+ </div>
+<{/if}>
+<p></p>
+<div align="center" style="height:20px; padding-top:5px;">
+ <p><a href="<{$xoops_url}>/user.php#lost" title="<{$block.lang_lostpass}>"><{$block.lang_lostpass}></a></p>
+ <{if $block.registration }>
+ <p></p>
+  <p><a href="<{$xoops_url}>/register.php" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a></p>
+ <{/if}>
+</div>

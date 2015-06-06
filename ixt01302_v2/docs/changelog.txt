@@ -1,0 +1,27 @@
+IXThemes ChangeLog
+
+== IXThemes ixt01302 ==
+
+===2009-12-02 : 2.0 ===
+
+Improved:
+- The zone for promo slides is added
+- The expanded footer zone is added
+- Loading jQuery from CMS core (for XOOPS 2.4.x) is added
+- The self-adjusted menubar is added
+
+===2009-04-20 : 1.2 ===
+
+Improved:
+- New theme structure ( /docs, /icons, /xoplugins, /xosmarty are added)
+- Large screenshot added (screenshot.jpg)
+- .htaccess added
+- xo-info.php added
+
+===2009-04-15 : 1.1 ===
+
+This release has been not published
+
+===2009-04-13 : 1.0 ===
+
+The first public release of a themes collection ixt013

@@ -1,0 +1,30 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: system_block_search.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div style="width:100%; overflow:hidden;">
+ <form style="margin-top:0px;" action="<{$xoops_url}>/search.php" method="get">
+   <div align="center">
+    <input type="text" name="query" size="33" maxlength="33" />
+    <input type="hidden" name="action" value="results" />
+   </div>
+   <p>&nbsp;</p>
+   <div align="center">
+    <span class="ixt-button-wrapper">
+     <span class="l"></span><span class="r"></span>
+     <input type="submit" class="ixt-button" value="<{$block.lang_search}>" name="search" />
+    </span>
+   </div>
+ </form>
+ <div align="center" style="height:20px; padding-top:5px;">
+  <a href="<{$xoops_url}>/search.php" title="<{$block.lang_advsearch}>"><{$block.lang_advsearch}></a>
+ </div>
+</div>

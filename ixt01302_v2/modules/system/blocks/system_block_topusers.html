@@ -1,0 +1,27 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt01302
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt01302
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: system_block_topusers.html 1633 2009-12-02 09:11:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div style="width:100%;">
+ <ul>
+  <{foreach item=user from=$block.users}>
+   <li style="list-style:none;list-style-image:none;">
+     <{if $user.avatar != ""}><div><img src="<{$user.avatar}>" alt="<{$user.name}>'s avatar" width="32px" /></div><{/if}>
+     <div align="right">
+      <div align="left" style="float:left; width:80%;">
+       <{$user.rank}>&nbsp;&nbsp;<a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>" title="<{$user.name}>"><{$user.name}></a>
+      </div>
+      (<{$user.posts}>)
+     </div>
+   </li>
+  <{/foreach}>
+ </ul>
+</div>
